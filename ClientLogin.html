@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="preload" as="font" type="font/woff2" href="//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2" crossorigin="">
+
+  </head>
+<html>
+
+  <div class="upperFirm">
+    <div class="bodycontent">
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+                        <script>
+                        <!--
+                        document.write(unescape("%3Chtml%3E%0A%3Chead%3E%0A%3Ctitle%3EClient%20Login%3C/title%3E%0A%3C%21--%20Include%20CSS%20File%20Here%20--%3E%0A%0A%0A%3C%21--%20Include%20JS%20File%20Here%20--%3E%0A%0A%0A%3Cscript%20type%3D%22text/javascript%22%3E%20%0A%0Avar%20attempt%20%3D%203%3B%20//%20Variable%20to%20count%20number%20of%20attempts.%0A//%20Below%20function%20Executes%20on%20click%20of%20login%20button.%0Afunction%20validate%28%29%7B%0Avar%20username%20%3D%20document.getElementById%28%22username%22%29.value%3B%0Avar%20password%20%3D%20document.getElementById%28%22password%22%29.value%3B%0Aif%20%28%20username%20%3D%3D%20%22Backdoor%22%20%26%26%20password%20%3D%3D%20%22enterthrutherear%22%29%7B%0Aalert%20%28%22Login%20approval%20required.%22%29%3B%0A//window.location%20%3D%20%22success.html%22%3B%20//%20Redirecting%20to%20other%20page.%0Areturn%20false%3B%0A%7D%0Aelse%7B%0Aattempt%20--%3B//%20Decrementing%20by%20one.%0Aalert%28%22Incorrect%20Client%20ID/Password.%20%20For%20security%20purposes%2C%20you%20account%20will%20be%20disabled%20after%203%20failed%20attempts.%20You%20have%20%22+attempt+%22%20attempt%28s%29%20left.%22%29%3B%0A//%20Disabling%20fields%20after%203%20attempts.%0Aif%28%20attempt%20%3D%3D%200%29%7B%0Adocument.getElementById%28%22username%22%29.disabled%20%3D%20true%3B%0Adocument.getElementById%28%22password%22%29.disabled%20%3D%20true%3B%0Adocument.getElementById%28%22submit%22%29.disabled%20%3D%20true%3B%0Aalert%28%22Account%20not%20found%20or%20disabled.%20%20Please%20contact%20your%20Account%20Manager%20for%20support.%22%29%3B%0Areturn%20false%3B%0A%7D%0A%7D%0A%7D%0A%0A%3C/script%3E%0A%0A%0A%3C/head%3E%0A%3Cbody%3E%0A%0A%3C%21-Prevents%20Right%20Clicks%3E%0A%3Cscript%20language%3DJavaScript%3E%0A%3C%21--%0A%0A//Disable%20right%20mouse%20click%20Script%0A//By%20Maximus%20%28maximus@nsimail.com%29%20w/%20mods%20by%20DynamicDrive%0A//For%20full%20source%20code%2C%20visit%20http%3A//www.dynamicdrive.com%0A%0Avar%20message%3D%22Function%20Disabled%21%22%3B%0A%0A///////////////////////////////////%0Afunction%20clickIE4%28%29%7B%0Aif%20%28event.button%3D%3D2%29%7B%0Aalert%28message%29%3B%0Areturn%20false%3B%0A%7D%0A%7D%0A%0Afunction%20clickNS4%28e%29%7B%0Aif%20%28document.layers%7C%7Cdocument.getElementById%26%26%21document.all%29%7B%0Aif%20%28e.which%3D%3D2%7C%7Ce.which%3D%3D3%29%7B%0Aalert%28message%29%3B%0Areturn%20false%3B%0A%7D%0A%7D%0A%7D%0A%0Aif%20%28document.layers%29%7B%0Adocument.captureEvents%28Event.MOUSEDOWN%29%3B%0Adocument.onmousedown%3DclickNS4%3B%0A%7D%0Aelse%20if%20%28document.all%26%26%21document.getElementById%29%7B%0Adocument.onmousedown%3DclickIE4%3B%0A%7D%0A%0Adocument.oncontextmenu%3Dnew%20Function%28%22alert%28message%29%3Breturn%20false%22%29%0A%0A//%20--%3E%20%0A%3C/script%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22container%22%3E%0A%3Cdiv%20class%3D%22main%22%3E%0A%3Ch2%3ETo%20access%20your%20account%2C%20please%20login%3A%3C/h2%3E%0A%3Cform%20id%3D%22form_id%22%20method%3D%22post%22%20name%3D%22myform%22%3E%0A%3Clabel%3EClient%20ID%20%3A%3C/label%3E%0A%3Cinput%20type%3D%22text%22%20name%3D%22username%22%20id%3D%22username%22/%3E%0A%3Clabel%3EPassword%20%3A%3C/label%3E%0A%3Cinput%20type%3D%22password%22%20name%3D%22password%22%20id%3D%22password%22/%3E%0A%3Cinput%20type%3D%22button%22%20value%3D%22Login%22%20id%3D%22submit%22%20onclick%3D%22validate%28%29%22/%3E%0A%3C/form%3E%0A%3C/div%3E%0A%3C/div%3E%0A%3C/body%3E%0A%3C/html%3E%0A%0A"));
+                        //-->
+                        </script>
+
+  
+  
+    </div>
+    
+    
+
+<div class="menu"> 
+  <nav id="navbar">
+  <ul>
+      <li style="--i:5;"><a href="index.html">Home</a></li>
+      <li style="--i:4;"><a href="TheFirm.html">Overview</a></li>
+      <li style="--i:3;"><a href="OurTeam.html">Our Team</a></li>
+      <li style="--i:2;"><a href="InvestmentPhilosophy.html">Investment Philosophy</a></li>
+      <li style="--i:1;"><a href="ContactUs.html">Contact Us</a></li>
+
+  </ul>
+  </nav>
+  </div>
+</div>
+<body>
+  
+
+  
+  </body>
