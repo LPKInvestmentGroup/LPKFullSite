@@ -200,8 +200,8 @@ ul li:last-child::after
   grid-area: copyright;
 /*  grid-row: 2;
   grid-column: 2/1;*/
-
-  /*this will line up with banner (above)*/
+  
+  line up with banner (above)*/
   max-width: 83%;
   margin-left: 8%;
   animation: fadeIn ease 12s;
