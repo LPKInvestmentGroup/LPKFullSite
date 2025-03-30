@@ -10,8 +10,8 @@ function myFunction() {
 /** Add function to exclude spam email and messages **/
 
 function validateForm() {
-    const emailField = document.getElementById('email').value;
-    const messageField = document.getElementById('message').value;
+    const emailField = document.getElementById('email').value.trim();
+    const messageField = document.getElementById('message').value.trim();
 
     // List of blocked email addresses
     const blockedEmails = ['blocked@example.com', 'spam@example.com', 'ericjonesmyemail@gmail.com'];
