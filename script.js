@@ -6,3 +6,33 @@ function myFunction() {
     x.className = "menu";
   }
 }
+
+/** Add function to exclude spam email and messages **/
+
+function validateForm() {
+    const emailField = document.getElementById('email').value;
+    const messageField = document.getElementById('message').value;
+
+    // List of blocked email addresses
+    const blockedEmails = ['blocked@example.com', 'spam@example.com', 'ericjonesmyemail@gmail.com'];
+
+    // Keywords to reject in the message
+    const blockedKeywords = ['spam', 'prohibited', 'LeadConnect'];
+
+    // Check if email is in the blocked list
+    if (blockedEmails.includes(emailField)) {
+      alert('Access Denied');
+      return false; // Prevent form submission
+    }
+
+    // Check for blocked keywords in the message
+    for (let keyword of blockedKeywords) {
+      if (messageField.includes(keyword)) {
+        alert('Your message contains prohibited content.');
+        return false; // Prevent form submission
+      }
+    }
+
+    // If all checks pass, allow form submission
+    return true;
+  }
