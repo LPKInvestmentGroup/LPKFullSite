@@ -11,7 +11,7 @@ function myFunction() {
 
 function validateForm() {
     const emailField = document.getElementById('email').value.trim();
-    const messageField = document.getElementById('message').value.trim();
+    const messageField = document.getElementById('message').value();
 
     // List of blocked email addresses
     const blockedEmails = ['blocked@example.com', 'spam@example.com', 'ericjonesmyemail@gmail.com'];
