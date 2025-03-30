@@ -17,7 +17,7 @@ function validateForm() {
     const blockedEmails = ['blocked@example.com', 'spam@example.com', 'ericjonesmyemail@gmail.com'];
 
     // Keywords to reject in the message
-    const blockedKeywords = ['spam', 'prohibited', 'LeadConnect'];
+    const blockedKeywords = ['spam', 'prohibited', 'LeadConnect', '14-day trial'];
 
     // Check if email is in the blocked list
     if (blockedEmails.includes(emailField)) {
